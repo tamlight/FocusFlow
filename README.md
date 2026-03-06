@@ -11,7 +11,7 @@ We've all been there: a research rabbit hole, a complex coding problem, or a vac
 2.  **RAM Efficiency**: Modern browsers are memory-hungry. By saving contexts and closing tabs, you reclaim system resources for the tasks that actually matter.
 3.  **Context Switching**: Switching between different projects or moods (e.g., from Work to Gaming) is mentally taxing. FocusFlow provides a "save game" state for your browser, allowing you to resume exactly where you left off.
 
-![FocusFlow UI Placeholder](https://via.placeholder.com/400x300.png?text=FocusFlow+Ocean+Blue+UI)
+![FocusFlow UI](banner.png)
 
 ## ✨ Key Features
 - **Context Saving**: Save all tabs in your current window into a single named "Workspace" and close them instantly to save RAM.
