@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <header class="navbar">
+            <div class="brand">
+                <div class="logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="#00a3ff" stroke="#00a3ff" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h1 class="app-title">FocusFlow</h1>
+            </div>
+            <div class="status-badge">ACTIVE</div>
+        </header>
+
+        <div class="stats-card">
+            <div class="stats-info">
+                <div class="stats-label">Total Workspaces</div>
+                <div class="stats-subtext">Currently saved contexts</div>
+            </div>
+            <div id="workspace-count" class="stats-value">0</div>
+        </div>
+
+        <section class="settings-group">
+            <div class="setting-item api-config">
+                <div class="setting-text">
+                    <div class="setting-name">Groq API Configuration</div>
+                    <div id="api-status-desc" class="setting-desc">Checking API status...</div>
+                </div>
+                <div class="api-input-wrapper">
+                    <input type="password" id="groq-api-key" placeholder="gsk_..." spellcheck="false">
+                    <button id="save-api-key" class="save-icon-btn" title="Save API Key">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z" />
+                            <polyline points="17 21 17 13 7 13 7 21" />
+                            <polyline points="7 3 7 8 15 8" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-actions">
+            <div class="input-wrapper">
+                <input type="text" id="context-name" placeholder="Workspace Name..." spellcheck="false">
+                <button id="ai-name-btn" class="ai-spark-btn" title="AI Suggest">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                    </svg>
+                </button>
+            </div>
+            <button id="save-context-btn" class="main-btn">Save Current Context</button>
+        </section>
+
+        <section class="workspaces-section">
+            <h2 class="section-label">Your Workspaces</h2>
+            <div id="context-list" class="context-container">
+                <!-- Dynamic content -->
+            </div>
+        </section>
+
+        <footer class="bottom-nav">
+            <button class="nav-btn">Help Center</button>
+            <button class="nav-btn">Feedback</button>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

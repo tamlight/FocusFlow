@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "FocusFlow - Context-Aware Workspace",
+  "version": "1.0.0",
+  "description": "Save and restore your browser tabs context instantly, reducing tab overload and saving RAM.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "tabGroups",
+    "scripting"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "FocusFlow"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
