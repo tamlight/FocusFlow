@@ -15,7 +15,7 @@
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/[YOUR_USERNAME]/FocusFlow.git
+    git clone https://github.com/tamlight/FocusFlow.git
     ```
 2.  **Open Browser Extensions**:
     - Go to `chrome://extensions/` (Chrome/Edge/Brave).
